@@ -1,29 +1,119 @@
 body {
     width: 800px;
     margin: auto;
+    background-color: lightblue;
 }
 
 main {
     margin-top: 70px;
-    border: 3px solid grey;
+    border: 1px solid black;
     box-shadow: 0px 0px 4px 4px darkgrey;
 }
 
-div {
+.box {
     display: flex;
-justify-content: space-between;
-
+   height: 500px;
 }
 img {
-    width: 600px;
+    width: 700px;
+    height: 500px;
+    image-resolution: 1920px 1080px;
 }
 .arrow {
     width: 50px;
+    height: 30px;
     position: relative;
-    padding-bottom: 200px;
-    padding-top: 200px;
+    padding-bottom: 220px;
+    padding-top: 250px;
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+.arrow:hover {
+    background-color:#7cb6e6;
+    padding-bottom: 220px;
 }
 
 #left-arrow {
     transform: rotate(0.5turn);
 }
+
+.grey-container  {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 700px;
+    height: 120px;
+    position: absolute;
+    bottom: 83px;
+    box-sizing: border-box;
+    padding-left: 70px;
+    padding-right: 70px;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.thumbnail {
+    width: 800px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    cursor: pointer;
+  }
+  
+  .container{
+    margin-top: 20px;
+    box-shadow: 0px 0px 2px 2px black;
+    width: 100px;
+    height: 80px;
+}
+
+.container:hover {
+    display: inline;
+    margin-top: 0px;
+    width: 140px;
+    height: 120px;
+}
+#containerPhoto{
+    width: 100%;
+    height: 100%;
+}
+.speech-bubble {
+    position: absolute;
+    display: none;
+    top: -90px;
+    left: -45px;
+	background-color: #3d3838;
+    border-radius: .4em;
+    width: max-content;
+    height: fit-content;
+    text-align: center;
+    font-stretch: initial;
+    font-size: 20px;
+    padding-bottom: 20px; 
+    color: white;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+#containerPhoto:hover + .speech-bubble{
+    display: initial;
+}
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	width: auto;
+	height: auto;
+	border: 16px solid transparent;
+	border-top-color: #3d3838;
+	border-bottom: auto;
+	margin-left: -16px;
+	margin-bottom: -37px;
+}
+
+  
